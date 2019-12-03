@@ -75,7 +75,7 @@ subprojects {
             archives sourcesJar
         }
 
-        def v = "$baseVersion-kotlin-$kotlin_version"
+        def v = "$baseVersion-kotlin-$kotlin_version-ir-$js_ir_version"
         bintray {
             user = System.getenv('BINTRAY_USER')
             key = System.getenv('BINTRAY_KEY')
